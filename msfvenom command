@@ -17,5 +17,7 @@ set the python3 server
 python3 -m http.server
 run msfvenom by typing "run" or "exploit"
 
+go to the target machine and execute the exe file and more info>run anyway 
+go back to the linux to see if you have meterpreter to be able to start searching for file using ls commands etc
 
 
